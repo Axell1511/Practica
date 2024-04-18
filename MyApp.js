@@ -24,7 +24,7 @@ app.use( express.static(path.join(__dirname, 'public')))
 
 
 //Acceso a Home
-app.get("/Home", (req, res)=>{
+app.get("/", (req, res)=>{
     res.render("index")
 
 })
