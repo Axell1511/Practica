@@ -6,6 +6,11 @@
       }
     ],
     "routes": [
+
+      {
+        "src": "/old-path",
+        "dest": "/new-path"
+      },
       {
         "src": "/",
         "dest": "MyApp.js" 
