@@ -1,7 +1,6 @@
 //Importamos express
 const express = require("express");
-
-//
+const ejs = require("ejs")
 var path = require("path")
 
 
@@ -14,7 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 //
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 
 
@@ -40,6 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
         res.render("registro");
     });
     
+    app.get ("/style.css", (req,res)=>{
+        res.sendFile(__dirname + "/public/css/style.css")
+    });
 
 //Publicamos nuestro App
 app.listen(3001, (req, res)=>{
