@@ -24,7 +24,7 @@ app.get("/", (req, res)=>{
 })
 
 //Acceso a Cursos
-app.get("/Cursos", (req, res)=>{
+app.get("/cursos", (req, res)=>{
     res.render("cursos")
 
 })
@@ -36,13 +36,13 @@ app.get("/contactos", (req, res)=>{
 })
 
 //Acceso a Soporte
-app.get("/Soporte", (req, res)=>{
+app.get("/soporte", (req, res)=>{
     res.render("soporte")
 
 })
 
 //Acceso a Registro
-app.get("/Registro", (req, res)=>{
+app.get("/registro", (req, res)=>{
     res.render("registro")
 
 })
