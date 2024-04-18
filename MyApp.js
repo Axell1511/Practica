@@ -10,14 +10,8 @@ var path = require("path")
 const app = express();
 
 //Implementando EJS-Motor de plantillas HTML
-app.set("view engine", "ejs")
-
-
-//Publicamos nuestro App
-app.listen(3001, (req, res)=>{
-    //console.log("Mi App esta corriendo en el puerto 3001")
-
-})
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 //
 app.use( express.static(path.join(__dirname, 'public')))
@@ -50,5 +44,11 @@ app.get("/Soporte", (req, res)=>{
 //Acceso a Registro
 app.get("/Registro", (req, res)=>{
     res.render("registro")
+
+})
+
+//Publicamos nuestro App
+app.listen(3001, (req, res)=>{
+    //console.log("Mi App esta corriendo en el puerto 3001")
 
 })
