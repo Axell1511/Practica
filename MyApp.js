@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
     //Acceso a Home
     app.get("/", (req, res)=>{
-        res.render("cursos")
+        res.render("index")
 
     })
 
