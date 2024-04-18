@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 
     //Acceso a Home
-    app.get("/", (req, res)=>{
+    app.get("/home", (req, res)=>{
         res.render("index")
 
     })
@@ -40,7 +40,7 @@ app.use(express.static('public'));
     });
     
     app.get ("/style.css", (req,res)=>{
-        res.sendFile(__dirname + "/public/css/style.css")
+        res.render(__dirname + "/public/css/style.css")
     });
 
 //Publicamos nuestro App

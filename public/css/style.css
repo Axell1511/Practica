@@ -245,7 +245,10 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block; /* Hace que el botón sea un elemento de bloque */
+    margin: 0 auto; /* Centra el botón horizontalmente */
 }
+
 
 /* Estilos para el apartado de contactos */
 .contacto-info {
@@ -325,7 +328,9 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 100%; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .form input[type="submit"]:hover {
