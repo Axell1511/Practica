@@ -24,25 +24,25 @@ app.get("/", (req, res)=>{
 })
 
 //Acceso a Cursos
-app.get("/Cursos", (req, res)=>{
+app.get("/cursos", (req, res)=>{
     res.render("cursos")
 
 })
 
 //Acceso a Contactos
-app.get("/Contactos", (req, res)=>{
+app.get("/contactos", (req, res)=>{
     res.render("contactos")
 
 })
 
 //Acceso a Soporte
-app.get("/Soporte", (req, res)=>{
+app.get("/soporte", (req, res)=>{
     res.render("soporte")
 
 })
 
 //Acceso a Registro
-app.get("/Registro", (req, res)=>{
+app.get("/registro", (req, res)=>{
     res.render("registro")
 
 })
